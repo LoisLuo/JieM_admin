@@ -1,0 +1,58 @@
+
+@import '~antd/dist/antd.css';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+/*页面遮罩效果样式*/
+.view_mask{
+  position:absolute;
+  left:0;right:0;top:0;bottom:0;
+  z-index: 999;
+  overflow: hidden;
+}
+.view_mask .mask_bg{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index: 0;
+  border-top:0px solid rgba(192,192,192,0.3);
+  border-bottom:0px solid rgba(192,192,192,0.3);
+  transition: all 0.5s ease;
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* 图片上传样式 */
+.selectOneFile{
+  width:180px;height:180px;
+  border:1px solid #aaa;
+  line-height: 180px;
+}
+
+.uploadedOneFile{
+  display:block;
+  width:180px;height:180px;
+}
